@@ -1,0 +1,53 @@
+@import url(./mixin.scss);
+@import url(./variables.scss);
+*
+{
+    @include body();
+}
+fieldset
+{
+    @include fieldset();
+}
+legend
+{
+    @include legend();
+}
+#doing-input
+{
+    @include input();
+}
+#doing-submit
+{
+    @include btn();
+    background-color: $addbtn-backgroundcolor;
+    color: $addbtn-color;
+}
+#todo-show
+{
+    @include btn();
+    background-color: $showbtn-backgroundcolor;
+    color: $showbtn-color;
+}
+#todo-hide
+{
+    @include btn();
+    background-color: $hidebtn-backgroundcolor;
+    color: $hidebtn-color;
+}
+#list-Delete
+{
+    @include btn();
+    background-color: $hidebtn-backgroundcolor;
+    color: $hidebtn-color; 
+}
+#list-edit
+{
+    @include btn();
+    background-color: $hidebtn-backgroundcolor;
+    color: $hidebtn-color; 
+}
+#todo-infor
+{
+    @include infor();
+    @include dislayFlexRow;
+}

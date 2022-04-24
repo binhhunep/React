@@ -1,0 +1,53 @@
+@import url(./variables.scss);
+
+@mixin dislayFlexRow(){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+@mixin dislayFlexColum(){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+@mixin body() {
+    padding:0;
+    margin:0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+@mixin infor(){
+    font-family: $infor-fontfamily;
+    font-size: $infor-fontsize;
+    color: $infor-color;
+    border-radius: $boder-radius;
+    box-shadow: $box-shadow;
+} 
+@mixin legend() {
+    color: $legend-color;
+    font-size: $legend-fontsize;
+    text-shadow: $legend-textshadow;
+    animation: legend 5s cubic-bezier(0.175, 0.885, 0.32, 1.275)  infinite forwards ;
+}
+@mixin feildset() {
+    width: 60vmax;
+    font-family: cursive;
+    background-color: $feildset-backgroundcolor;
+    border-radius: $boder-radius;
+    box-shadow: $box-shadow;
+}
+@mixin input {
+    font-size: $input-fontsize;
+    font-family: $input-fontfamily;
+    color: $input-color;
+    background-color: $input-backgroundcolor;
+}
+@mixin btn {
+    width: 10vmx;
+    font-size: 2vmax;
+    border-radius: $boder-radius;
+    box-shadow: $box-shadow;
+    border: none;
+}
